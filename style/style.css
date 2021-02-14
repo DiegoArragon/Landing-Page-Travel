@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* CSS Document */
+/* Theme Name: Landing Page for City Trips Company
+Author: Mariusz Kozak 
+Copyright 2021. All rights reserved */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
+
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+ /* Page Styles */
+
+ h1 {
+     font-size: 4rem;
+ }
+
+ li,
+ button,
+ label,
+ input,
+ p {
+     font-size: 2.5re;
+ }
+h2 {
+    font-size: 4.8rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+h4,h5 {
+    font-size: 2.8rem;
+}
+button {
+    padding: 2rem 6rem;
+    background: #9ccc65;
+    border: none;
+    border-radius: 4px;
+    color: whitesmoke;
+    font-size: 1.6rem;
+    font-weight: 5 00;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Nav section with hero */
+
+.main-head {
+    background: #131c27;
+    color: whitesmoke;
+}
+nav {
+    min-height: 10vh;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+} 
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+#logo {
+    flex: 2 1 40rem; 
+    font-weight: normal;  
+    font-family: 'Pacifico', cursive;
+}
+.hero {
+    min-height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),url(../img/landing-page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h2 {
+    font-size: 5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.hero h3 {
+    padding: 3rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+
+
+@media screen and (max-width: 932px) {
+    html {
+        font-size: 55%;
+    }
+    nav {
+        text-align: center;
+    }
+    #logo {
+        padding: 1.8rem;
+    }
+}
