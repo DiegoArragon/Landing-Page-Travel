@@ -159,18 +159,27 @@ nav ul {
 }
 .moving-cloud-1 {
     z-index: 1;
-    animation: cloudAnimation 3s infinite alternate ease-in-out;
+    animation: cloudAnimation2 12s infinite alternate ease-in-out;
 }
 .moving-cloud-2 {
-    top: 10%;
+    top: 5%;
     z-index: 0;
     opacity: 0.4;
-    animation: cloudAnimation 4s infinite alternate ease-in-out;
+    animation: cloudAnimation 6s infinite alternate ease-in-out;
 }
 
 @keyframes cloudAnimation {
     from{
-     transform: translate(10%, -10%);
+     transform: translate(10%, 0%);
+    }
+    to{
+      transform: translate(0%, 0%);
+    }
+}
+
+@keyframes cloudAnimation2 {
+    from{
+     transform: translate(25%, 0%);
     }
     to{
       transform: translate(0%, 0%);
