@@ -217,19 +217,77 @@ nav ul {
     width: 90%;
     margin: auto;
     display: flex;
-    min-height: 70vh;
+    min-height: 60vh;
     align-items: center;
     flex-wrap: wrap;
 }
 .card {
+    text-align: center;
     background: #1e2c3d;
+    color: whitesmoke;
     flex: 1 1 25rem;
-    min-height: 40vh;
+    min-height: 35vh;
     margin: 2rem 5rem;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3), 0px 20px 20px rgba(0, 0, 0, 0.3);
+}
+.card h4,
+.card p {
+    padding: 1.5rem;
+}
+.card-icon {
+    background: whitesmoke;
 }
 .cards img {
-    height: 70px;
+    max-width: 20%;
+    margin: 2rem;
+    opacity: 0.7;
+}
+
+/* Contact Section */
+
+#contact {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(../img/landing-page-contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-wrapper {
+    background: rgba(19, 28, 39, 0.8);
+    border-radius: 0.8rem;
+    width: 50%;
+    color: whitesmoke;
+}
+.form-head {
+    text-align: center;
+    padding: 2rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.name-form,
+.email-form {
+    padding: 3rem;
+    text-align: center;
+}
+.form-wrapper label {
+    margin: 0rem 3rem;
+}
+.form-wrapper button {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    border-bottom-right-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+}
+.form-wrapper input {
+    padding: 1rem 3rem;
+    border: 1px solid #131c27;
+    border-radius: 0.4rem;
+    min-width: 80%;
 }
 
 /* Media Query */
@@ -253,5 +311,8 @@ nav ul {
     .moving-cloud-2 {
         z-index: 2;
         
+    }
+    .form-wrapper input {
+        min-width: 80%;
     }
 }
